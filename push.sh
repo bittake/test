@@ -1,6 +1,6 @@
-﻿git add . >/dev/null 2>/dev/null
+#!/bin/sh
+git add .
 echo -n "输入注释->"
-read commit
-git commit -m $commit
+read com
+git commit -m $com
 git push origin master
-echo "成功！"
